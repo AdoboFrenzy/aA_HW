@@ -25,7 +25,7 @@ class Artist < ApplicationRecord
 
     album_counts = {}
 
-    albums.each do |album|
+    data.each do |album|
       album_counts[album.title] = album.tracks_count
     end
 
