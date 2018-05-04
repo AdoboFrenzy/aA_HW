@@ -107,14 +107,20 @@ class MetaCorgiSnacks
   def initialize(snack_box, box_id)
     @snack_box = snack_box
     @box_id = box_id
+    @get = SnackBox::SNACK_BOX_DATA[box_id]
   end
 
   def method_missing(name, *args)
-    # Your code goes here...
+    method_name = name.to_s
+    send1 = "get_#{method_name}_info"
+    send2 = "get_#{method_name}_tastiness"
+
+    return "#{method_name.capitalize}: #{@snack_box.send(send1, @box_id)}: #{@snack_box.send(send2, @box_id)}"
+
   end
 
 
   def self.define_snack(name)
-    # Your code goes here...
+    #tbd
   end
 end
