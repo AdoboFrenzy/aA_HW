@@ -1,18 +1,30 @@
 class BooksController < ApplicationController
   def index
-    # your code here
+    @books = Book.all
+
+    render :index
   end
 
   def new
-    # your code here
+    render :new
   end
 
-  def create
-    # your code here
+  def create #from RESTful controller demo @ 13:50
+    new_book_to_be_added = Book.new(book_params)
+    if new_book_to_be_added.save
+      redirect_to action: :index
+    else
+      book.errors.full_messages
+    end
+
   end
 
   def destroy
-    # your code here
+    book_to_be_obliterated = Book.find(params[:id]) #'id' from parameters
+    book_to_be_obliterated.destroy #active record method to destroy an object
+
+    redirect_to action: :index
+    # fail
   end
 
   private
