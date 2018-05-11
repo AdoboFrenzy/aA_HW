@@ -40,7 +40,16 @@ with a class attribute containing 'col-' */
 }
 
 /* CSS Day 6 media queries */
-@media all and (max-width: ___) {
+@media all and (max-width: 480px) {
+
+  width: 100%;
 
 }
 
+.hamburger-dropdown:hover ul {
+    display: block ;
+    background: url(hamburger.png);
+
+    width: 50px;
+    height: 50px;
+ }
