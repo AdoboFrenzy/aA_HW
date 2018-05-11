@@ -1,0 +1,32 @@
+/* PHASE 1: Header */
+
+body {
+
+  font: sans-serif;
+  weight: 400px;
+  font-size: 24px;
+  background: grey;
+
+}
+
+.header {
+
+  background: grey;
+  color: white;
+  border-bottom: darkred;
+}
+
+.header a {
+  display: block;
+  padding: 20px;
+}
+
+.header-nav {
+
+  border-left: darkred;
+  border-right: darkred;
+  margin: auto;
+  background: red;
+  width: 900px;
+
+}
