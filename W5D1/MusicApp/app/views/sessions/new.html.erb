@@ -1,0 +1,25 @@
+<h1> Please Log In to Continue! </h1>
+
+<h5><a href="<%= new_user_url %>"> or Sign Up Here! </a></h5>
+
+<form action ="bands_url" method="post">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <label for="email"> E-Mail </label>
+  <input
+    type = "text"
+    name = "user[email]"
+    id = "email"  >
+
+<br>
+  <label for="password"> Password </label>
+  <input
+    type = "text"
+    name = "user[password]"
+    id = "password"
+     >
+
+<br>
+  <input type="submit" value= "Log In">
+
+   </form>

@@ -1,0 +1,7 @@
+<h1> <%= @album.name %> </h1>
+<h3> <%= @album.year %> </h3>
+<% if @album.live %>
+<h3> Type: Live </h3>
+<% else %>
+<h3> Type: Studio </h3>
+<% end %>

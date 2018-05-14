@@ -1,0 +1,9 @@
+<h1> Music App </h1>
+
+<h3> Join our community now and Sign up! </h3>
+<h5> (Members: <%=  @users.count %>) </h5>
+
+<% @users.each do |user| %>
+<%= user.name %>
+<br>
+<% end %>
