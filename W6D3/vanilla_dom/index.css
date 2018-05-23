@@ -1,0 +1,27 @@
+.visited {
+  text-decoration: line-through;
+  background-color: black;
+  display: inline-flex;
+}
+
+.photo-form-container {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.dog-photos {
+  list-style: none;
+}
+
+.dog-photos li {
+  display: inline;
+}
+
+.dog-photos li img {
+  height: 200px;
+  width: auto;
+  padding: 3px;
+}
