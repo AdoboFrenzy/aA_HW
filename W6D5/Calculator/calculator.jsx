@@ -3,7 +3,9 @@ import React from 'react';
 class Calculator extends React.Component{
   constructor(props){
     super(props);
-    //your code here
+    this.state = {result:0, num1:"", num2:""};
+    this.setNum1 = this.setNum1.bind(this);
+    this.setNum2 = this.setNum2.bind(this);
   }
 
   //your code here
@@ -12,9 +14,19 @@ class Calculator extends React.Component{
     return (
       <div>
         <h1>Hello World</h1>
-        //your code will replace this
+         // Greetings <br />
+         // Calculator here
+        <h1>{this.state.result}</h1>
       </div>
     );
+  }
+
+  setNum1(e) {
+    this.setNum1
+  }
+
+  setNum2(e) {
+
   }
 }
 
