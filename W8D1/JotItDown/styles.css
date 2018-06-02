@@ -1,0 +1,47 @@
+#img_pencil {
+  width: 300px;
+  height: 300px;
+}
+
+body {
+  background-image: url("splash.jpg");
+  background-repeat: space;
+  background-size: cover;
+}
+
+.top_nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: lightgrey;
+  text-align: center;
+
+}
+
+
+.top_nav_left {
+  text-align: left;
+}
+
+.top_nav_right {
+  text-align: right;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: lightgrey;
+  text-align: center;
+    justify-content: space-between;
+}
+
+main {
+  position: fixed;
+  top: 200;
+  left: 200;
+}
